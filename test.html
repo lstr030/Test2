@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Research Design Service</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            text-align: center;
+        }
+        .input-box {
+            margin: 10px 0;
+        }
+        #output {
+            margin-top: 30px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Academic Research Design Service</h1>
+    <p>Provide the required information and get a comprehensive research design!</p>
+
+    <div class="input-box">
+        <label for="field-of-research">Field of Research:</label>
+        <input type="text" id="field-of-research" required>
+    </div>
+
+    <div class="input-box">
+        <label for="topic">Topic:</label>
+        <input type="text" id="topic" required>
+    </div>
+
+    <div class="input-box">
+        <label for="research-question">Research Question:</label>
+        <input type="text" id="research-question" required>
+    </div>
+
+    <div class="input-box">
+        <label for="goal-of-research">Goal of Research:</label>
+        <input type="text" id="goal-of-research" required>
+    </div>
+
+    <div class="input-box">
+        <label for="research-gap">Research Gap:</label>
+        <input type="text" id="research-gap" required>
+    </div>
+
+    <div class="input-box">
+        <label for="hypotheses">Hypotheses (Optional):</label>
+        <input type="text" id="hypotheses">
+    </div>
+
+    <div class="input-box">
+        <label for="problem-statement">Problem Statement (Optional):</label>
+        <input type="text" id="problem-statement">
+    </div>
+
+    <button onclick="generateResearchDesign()">Generate Research Design</button>
+
+    <div id="output">
+        <h2>Research Design</h2>
+        <p id="research-design-output"></p>
+    </div>
+
+    <script>
+        function generateResearchDesign() {
+            // Here, you will capture the input and call your backend service/API
+            // For now, let's just display a dummy message in the output box
+
+            let output = "Your comprehensive research design will appear here.";
+            document.getElementById("research-design-output").innerText = output;
+            document.getElementById("output").style.display = "block";
+        }
+    </script>
+</body>
+</html>
